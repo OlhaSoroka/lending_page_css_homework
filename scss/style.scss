@@ -1,8 +1,4 @@
-* {
-    font-family: "Montserrat", sans-serif;
-}
-
-.page_container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./main.scss";
+@import "./media.scss";

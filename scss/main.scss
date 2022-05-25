@@ -1,0 +1,86 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.page_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main_button {
+    @include main_button;
+}
+.outline_button_dark {
+    @include outline_button_dark;
+}
+
+// =============================== HEADER ========================= //
+.header {
+    background-color: $main_gray;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    &__burger {
+        div {
+            width: 32px;
+            height: 4px;
+            margin: 4px;
+            background-color: white;
+            border-radius: 2px;
+        }
+    }
+    &__logo {
+        display: none;
+    }
+    &__navigation {
+        display: none;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        &__item {
+            &_cart {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 4px;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+            & > button {
+                display: none;
+            }
+        }
+    }
+}
+
+// =============================== PROMO ========================= //
+
+.promo {
+    background: url(../image/bg_mobile_promo.png) no-repeat;
+    background-size: 100%;
+    &__container {
+        padding: 16rem 1rem 3.25rem 1rem;
+    }
+    &__logo {
+        img {
+            width: 100%;
+        }
+    }
+    &__description {
+        font-weight: 500;
+        color: $text_white;
+        margin: 2rem 0 1rem 0;
+    }
+    &__button {
+        button {
+            width: 100%;
+        }
+    }
+}
