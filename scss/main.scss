@@ -10,9 +10,21 @@
 
 .main_button {
     @include main_button;
+    &:hover {
+        @include main_button--hover;
+    }
 }
 .outline_button_dark {
     @include outline_button_dark;
+    &:hover {
+        @include outline_button_dark--hover;
+    }
+}
+.outline_button_light {
+    @include outline_button_light;
+    &:hover {
+        @include outline_button_light--hover;
+    }
 }
 .section_header {
     font-weight: bold;
@@ -28,6 +40,19 @@
         border-radius: 50%;
         background-color: $main_orange;
         margin-right: 0.5rem;
+    }
+}
+.slider_control {
+    width: 53px;
+    height: 53px;
+    background-color: $beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: darken($beige, 5%);
     }
 }
 
@@ -210,15 +235,6 @@
             }
         }
     }
-    &__control_item {
-        width: 53px;
-        height: 53px;
-        background-color: $beige;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
     &__description {
         &_subtitle {
             color: $main_orange;
@@ -272,6 +288,69 @@
         button {
             margin-top: 1rem;
             width: 100%;
+        }
+    }
+}
+
+//===========================================PRODUCT==============================================//
+
+.product {
+    &__title {
+        padding: 2.5rem 0 3rem 1rem;
+    }
+    &__card {
+        display: none;
+        width: 286px;
+        padding: 2rem;
+        justify-self: center;
+        &:nth-child(1) {
+            display: block;
+        }
+        &__image {
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+        }
+        &_wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__title {
+            color: $main_gray;
+            font-weight: bold;
+            margin-top: 1.5rem;
+        }
+        &__text {
+            line-height: 20px;
+            margin-top: 0.5rem;
+        }
+        &__price {
+            font-weight: bold;
+            color: $main_orange;
+            margin-top: 1rem;
+        }
+        &__buttons_wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        &__button_add {
+            button {
+                padding: 1em;
+                width: 52px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    &__controls {
+        display: flex;
+        justify-content: center;
+        &__item {
+            margin: 1rem;
+            &:first-child {
+                transform: rotate(180deg);
+            }
         }
     }
 }
