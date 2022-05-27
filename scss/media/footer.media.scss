@@ -1,0 +1,35 @@
+@media (min-width: 576px) {
+    .footer {
+        &__list {
+            &_wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        &__menu {
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .footer {
+        &__container {
+            display: flex;
+        }
+        &__list_wrapper {
+            margin-left: 5rem;
+            flex-grow: 1;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .footer {
+        &__list {
+            &_wrapper {
+                margin-left: 15rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}
