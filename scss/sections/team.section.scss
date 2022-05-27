@@ -1,0 +1,76 @@
+.team {
+    &__title {
+        justify-content: flex-end;
+        padding: 1.5rem 1rem;
+    }
+    &__slider {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+    &__members {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        &__item {
+            width: 205px;
+            height: 335px;
+            position: relative;
+            &:nth-child(1) {
+                display: block;
+                .team__members__item_img {
+                    background: url("../image/team_1.png") no-repeat;
+                    background-size: 100%;
+                }
+            }
+            &:nth-child(2) {
+                display: none;
+                .team__members__item_img {
+                    background: url("../image/team_2.png") no-repeat;
+                    background-size: 100%;
+                }
+            }
+            &:nth-child(3) {
+                display: none;
+                .team__members__item_img {
+                    background: url("../image/team_3.png") no-repeat;
+                    background-size: 100%;
+                }
+            }
+            &:nth-child(4) {
+                display: none;
+                .team__members__item_img {
+                    background: url("../image/team_4.png") no-repeat;
+                }
+            }
+            &_img {
+                position: absolute;
+                width: 130px;
+                height: 190px;
+                left: calc(50% - 65px);
+                bottom: 0px;
+            }
+            &.active {
+                background-color: $main_orange;
+                .team__members__item_img {
+                    width: 200px;
+                    height: 290px;
+                    left: -15px;
+                    top: 17px;
+                }
+            }
+        }
+    }
+    &__description {
+        &_subtitle {
+            color: $main_orange;
+            font-weight: bold;
+            padding: 1.5rem 0 0 1rem;
+        }
+        &_text {
+            color: $main_gray;
+            padding: 1rem 1rem 2rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@media (min-width: 576px) {
+    .service {
+        &__title {
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        &__items {
+            &_container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        &__item {
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .service {
+        &__title {
+            justify-content: center;
+            font-size: 2rem;
+            text-transform: capitalize;
+        }
+        &__items {
+            &_container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .service {
+        background: url(/image/service_bg.png) no-repeat;
+        margin-top: 6rem;
+        height: 600px;
+        &__title {
+            justify-content: center;
+            font-size: 4rem;
+            text-transform: capitalize;
+            &::before {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 1rem;
+            }
+            &__items {
+                &_container {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
+    }
+}

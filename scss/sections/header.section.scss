@@ -1,0 +1,43 @@
+.header {
+    background-color: $main_gray;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    &__burger {
+        div {
+            width: 32px;
+            height: 4px;
+            margin: 4px;
+            background-color: white;
+            border-radius: 2px;
+        }
+    }
+    &__logo {
+        display: none;
+    }
+    &__navigation {
+        display: none;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        &__item {
+            &_cart {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 4px;
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+            & > button {
+                display: none;
+            }
+        }
+    }
+}

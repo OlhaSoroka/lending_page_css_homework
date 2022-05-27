@@ -1,0 +1,50 @@
+@media (min-width: 576px) {
+    .product {
+        &__title {
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .product {
+        &__title {
+            padding: 5.5rem 0 3rem 2rem;
+            font-size: 2rem;
+            text-transform: capitalize;
+            justify-content: left;
+        }
+        &__card {
+            display: block;
+
+            &_wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        &__controls {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .product {
+        &__title {
+            padding: 5.5rem 0 4rem 2rem;
+            font-size: 4rem;
+
+            &::before {
+                width: 1.5rem;
+                height: 1.5rem;
+                margin-right: 1rem;
+            }
+        }
+        &__card {
+            &_wrapper {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}

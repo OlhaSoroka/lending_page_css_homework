@@ -1,0 +1,60 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.page_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main_button {
+    @include main_button;
+    &:hover {
+        @include main_button--hover;
+    }
+}
+.outline_button_dark {
+    @include outline_button_dark;
+    &:hover {
+        @include outline_button_dark--hover;
+    }
+}
+.outline_button_light {
+    @include outline_button_light;
+    &:hover {
+        @include outline_button_light--hover;
+    }
+}
+.section_header {
+    font-weight: bold;
+    color: $main_orange;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    &::before {
+        display: inline-block;
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: $main_orange;
+        margin-right: 0.5rem;
+    }
+}
+.slider_control {
+    width: 53px;
+    height: 53px;
+    background-color: $beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: darken($beige, 5%);
+    }
+}

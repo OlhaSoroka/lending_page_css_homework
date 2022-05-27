@@ -1,0 +1,42 @@
+.book {
+    position: relative;
+    &__container {
+        padding: 12rem 1rem 16rem 1rem;
+    }
+    &__form {
+        &_title {
+            color: $main_gray;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        &_subtitle {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: $main_gray;
+        }
+        &__input {
+            margin: 1rem 0;
+            label {
+                display: block;
+                padding: 0.5rem;
+                color: $main_gray;
+            }
+            input {
+                display: block;
+                width: 100%;
+                padding: 1rem;
+                border-radius: 4px;
+                font-size: 1rem;
+                border: 1px solid #dfdfdf;
+            }
+        }
+    }
+    &__button {
+        button {
+            margin-top: 1rem;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.product {
+    &__title {
+        padding: 2.5rem 0 3rem 1rem;
+    }
+    &__card {
+        display: none;
+        width: 286px;
+        padding: 2rem;
+        justify-self: center;
+        &:nth-child(1) {
+            display: block;
+        }
+        &__image {
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+        }
+        &_wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        &__title {
+            color: $main_gray;
+            font-weight: bold;
+            margin-top: 1.5rem;
+        }
+        &__text {
+            line-height: 20px;
+            margin-top: 0.5rem;
+        }
+        &__price {
+            font-weight: bold;
+            color: $main_orange;
+            margin-top: 1rem;
+        }
+        &__buttons_wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        &__button_add {
+            button {
+                padding: 1em;
+                width: 52px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    &__controls {
+        display: flex;
+        justify-content: center;
+        &__item {
+            margin: 1rem;
+            &:first-child {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@media (min-width: 576px) {
+    .promo {
+        &__logo {
+            img {
+                width: 75%;
+            }
+        }
+        &__description {
+            width: 75%;
+            line-height: 1.5rem;
+        }
+        &__button {
+            button {
+                width: unset;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .promo {
+        background: url(../image/bg_tablet.png) no-repeat;
+        background-size: 100%;
+        &__container {
+            padding: 8rem 1rem 3.25rem 1rem;
+        }
+        &__logo {
+            img {
+                width: 65%;
+            }
+        }
+        &__description {
+            width: 65%;
+            font-weight: 700;
+            line-height: 1.5rem;
+        }
+        &__button {
+            button {
+                width: unset;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .promo {
+        background: url(../image/bg_promo.png) no-repeat;
+        background-size: 100%;
+        &__container {
+            padding: 10rem 1rem 10rem 1rem;
+        }
+        &__logo {
+            img {
+                width: 55%;
+            }
+        }
+        &__description {
+            font-size: 2rem;
+            width: 55%;
+            font-weight: 700;
+            line-height: 2rem;
+            margin: 4.5rem 0 2.5rem 0;
+        }
+        &__button {
+            button {
+                width: unset;
+            }
+        }
+    }
+}

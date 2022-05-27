@@ -1,4 +1,5 @@
 @import "./variables.scss";
 @import "./mixins.scss";
-@import "./main.scss";
-@import "./media.scss";
+@import "./base.scss";
+@import "./sections/index.section.scss";
+@import "./media/index.media.scss";
