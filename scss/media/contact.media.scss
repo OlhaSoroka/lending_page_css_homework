@@ -1,0 +1,53 @@
+@media (min-width: 576px) {
+    .contact {
+        &__info {
+            display: flex;
+            justify-content: center;
+            &__item {
+                margin: 0 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        padding: 1rem 2.5rem;
+        &__info {
+            justify-content: space-between;
+            &__item {
+                h5 {
+                    font-weight: bold;
+                    color: $main_orange;
+                    text-transform: capitalize;
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                }
+                li {
+                    line-height: 30px;
+                    font-weight: 700;
+                    span:first-child {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .contact {
+        padding: 4rem 5rem;
+        &__container {
+            display: flex;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+        &__item {
+            h5 {
+                font-size: 4rem;
+            }
+        }
+    }
+}

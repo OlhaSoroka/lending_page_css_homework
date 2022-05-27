@@ -1,0 +1,37 @@
+.contact {
+    margin-top: 4rem;
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        margin-left: 1rem;
+        &_icons {
+            margin-top: 1rem;
+            img {
+                margin-right: 0.5rem;
+            }
+        }
+        &__item {
+            h5 {
+                font-weight: bold;
+                color: $main_orange;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                margin: 1rem 0;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            li {
+                line-height: 30px;
+                font-weight: 600;
+                span {
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+}
