@@ -42,6 +42,7 @@
                 display: none;
                 .team__members__item_img {
                     background: url("../image/team_4.png") no-repeat;
+                    background-size: 100%;
                 }
             }
             &_img {
@@ -50,6 +51,7 @@
                 height: 190px;
                 left: calc(50% - 65px);
                 bottom: 0px;
+                transition: all 0.5s ease-in-out;
             }
             &.active {
                 background-color: $main_orange;

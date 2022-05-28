@@ -60,6 +60,7 @@ body {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin: 0 1rem;
     &:hover {
         background-color: darken($beige, 5%);
     }
