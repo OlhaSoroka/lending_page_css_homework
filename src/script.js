@@ -53,9 +53,23 @@ function slideChange(slider) {
     }.png") no-repeat`;
     activeItem.style.backgroundSize = "100%";
   } else {
-    [...slider].forEach((member) => {
-      member.classList.remove("active");
-    });
-    slider[index].classList.add("active");
+    setActiveClassOnSliderItem(slider, index);
   }
+}
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 768) {
+    setActiveClassOnSliderItem(teamMembersSlider, 0);
+    setActiveClassOnSliderItem(reviewMembersSlider, 0);
+  }
+});
+
+function setActiveClassOnSliderItem(slider, index) {
+  [...slider].forEach((item, itemIndex) => {
+    if (itemIndex === index) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
 }
