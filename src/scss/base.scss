@@ -1,5 +1,6 @@
 @import "./mixins.scss";
 @import "./variables.scss";
+@import "./animation.scss";
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -35,12 +36,14 @@ body {
         @include outline_button_light--hover;
     }
 }
+
 .section_header {
     font-weight: bold;
     color: $main_orange;
     text-transform: uppercase;
     display: flex;
     align-items: center;
+
     &::before {
         display: inline-block;
         content: "";
@@ -49,6 +52,7 @@ body {
         border-radius: 50%;
         background-color: $main_orange;
         margin-right: 0.5rem;
+        animation: circle-rotation 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
     }
 }
 .slider_control {
