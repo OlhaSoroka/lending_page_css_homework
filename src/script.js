@@ -9,10 +9,14 @@ const reviewSliderControl = document.querySelector(".review__control_item");
 const reviewMembersSlider = document.querySelector(".review__members").children;
 
 burger.addEventListener("click", () => {
+  sideMenu.style.visibility = "visible";
   sideMenu.style.transform = "translateX(0vw)";
 });
 cross.addEventListener("click", () => {
   sideMenu.style.transform = "translateX(-100vw)";
+  setTimeout(() => {
+    sideMenu.style.visibility = "hidden";
+  }, 500);
 });
 
 teamSliderControl.addEventListener("click", () => {
@@ -35,7 +39,7 @@ function slideChange(slider) {
     const activeItem = slider[index - 1].children[0];
     const backgroundString =
       document.defaultView.getComputedStyle(activeItem).background;
-    const fileName = "/src/image/team_";
+    const fileName = "/image/team_";
     const indexOfFileName = backgroundString.indexOf(fileName);
     let numberOfFile = +backgroundString.slice(
       indexOfFileName + fileName.length,
