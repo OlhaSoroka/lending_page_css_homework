@@ -44,11 +44,13 @@
     }
     &__icons {
         margin-top: 1rem;
+
         img {
             filter: brightness(750%);
             margin-right: 0.5rem;
             width: 25px;
             height: 25px;
+            cursor: pointer;
         }
     }
 }
